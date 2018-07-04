@@ -14,7 +14,7 @@ def message(msg):
     if float(response.confidence) > 0.5:
         telegram.sendMessage(chatId, str(response))
     else:
-        telegram.sendMessage(chatID, "Não entendi! Ainda estou aprendendo :)")
+        telegram.sendMessage(chatId, "Não entendi! Ainda estou aprendendo :)")
 
 telegram.message_loop(message)
 
